@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>calucator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <audio src="AudioCutter_iphone.mp3" id="iphoneSound"></audio>
+  <div id="alert"></div>
+  <div class="body">
+    
+    <div class="circle"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+    
+    
+    <div class="calucator" id="calucator">
+      
+      <div class="lcd" id="lcd">
+        <p id="lcdText"></p>
+      </div>
+      
+      <div class="operators" id="operators">
+        <input type="button" value="+" id="plus" class="op"/>
+        <input type="button" value="-" id="manfi" class="op"/>
+        <input type="button" value="×" id="zarb" class="op"/>
+        <input type="button" value="÷" id="taghsim" class="op"/>
+        <input type="button" value="=" id="equal" />
+      </div>
+      
+      <div class="keys" id="keysHome">
+        <input type="button" value="1" id="1" class="keysNumbers"/>
+        <input type="button" value="2" id="2" class="keysNumbers"/>
+        <input type="button" value="3" id="3" class="keysNumbers"/>
+        <input type="button" value="4" id="4" class="keysNumbers"/>
+        <input type="button" value="5" id="5" class="keysNumbers"/>
+        <input type="button" value="6" id="6" class="keysNumbers"/>
+        <input type="button" value="7" id="7" class="keysNumbers"/>
+        <input type="button" value="8" id="8" class="keysNumbers"/>
+        <input type="button" value="9" id="9" class="keysNumbers"/>
+        <input type="button" value="DEL" id="del" class="horofi" class="keysNumbers"/>
+        <input type="button" value="0" id="0" class="keysNumbers"/>
+        <input type="button" value="C" id="clear" class="horofi" class="keysNumbers"/>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div id="result">
+    
+    <div>
+      <p id="resultText"></p>
+    </div>
+    
+    <div>
+      <button type="button" id="resultButton">New calculation</button>
+    </div>
+  </div>
+  <script src="main.js">
+  </script>
+</body>
+
+</html>
