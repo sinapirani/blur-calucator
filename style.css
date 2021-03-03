@@ -1,0 +1,189 @@
+*:hover{
+  outline: none !important;
+}
+body {
+    background: black
+}
+.calucator{
+  overflow: hidden !important;
+  position: absolute;
+  height: 415px;
+  width: 300px;
+  background: #FFFFFF63;
+  backdrop-filter: blur(40px);
+  border-radius: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding-top: 10px;
+  margin: 0;
+}
+.lcd{
+  display: flex;
+  height: 80px;
+  width: 90%;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  padding-right: 8px;
+  margin: auto auto 8px auto;
+  font-size: 50px;
+}
+.lcd p{
+  display: inline;
+  color: white;
+}
+.operators{
+  display: flex;
+  height: 40px;
+  width: 75%;
+  justify-content: space-between;
+  margin: 10px auto 10px auto;
+}
+.operators input{
+  display: flex;
+  width: 50px;
+  border-radius: 10%;
+  background: none;
+  margin-bottom: 3px;
+  color: white;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}
+.operators input:active{
+  background: #FFFFFF3D;
+}
+#equal{
+  animation: equal 1s infinite;
+}
+@keyframes equal{
+  50%{
+    background: #FFFFFF3D
+  }
+  100%{
+    background: none;
+  }
+}
+.keys{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  width: 300px;
+  height: 70px;
+  border-radius: 15px;
+  left: 50%;
+  top: 0%;
+  transform: translate(-50%,0%);
+}
+.keys input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  width: 55px;
+  background: #FFFFFF00;
+  border-radius: 100px;
+  margin: 5px 13px 5px 13px;
+  font-size: 40px;
+  color: white;
+  border: none;
+}
+
+@keyframes buttonsAnime{
+  
+  50%{
+    background: #FFFFFF70;
+    transform: scale(1.2)
+  }
+  100%{
+    background: none;
+  }
+
+}
+.circle{
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  background: #855dff;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  top: 100px;
+  left: 20px;
+  animation: circels 15s infinite linear;
+}
+
+.circle2{
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  background: #FF3939;
+  border-radius: 50%;
+  margin: 0;
+  padding: 0;
+  left: 100px;
+  top: 300px;
+  animation: circels2 15s infinite linear;
+}
+.horofi{
+  font-size: 20px !important;
+}
+@keyframes circels{
+  50%{
+    top:250px;
+  }
+  100%{
+    top:100px;
+  }
+}
+@keyframes circels2{
+  50%{
+    top: 100px;
+  }
+  100%{
+    top: 300px;
+  }
+}
+#equal{
+  display: none;
+}
+#result{
+  display: none;
+  position: absolute;
+  width: 70%;
+  background: #FFFFFF63;
+  backdrop-filter: blur(40px);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+}
+#resultText{
+  text-align: center;
+  display: block;
+  color: white;
+  font-size: 70px;
+  margin: 16px auto 16px auto;
+}
+#resultButton{
+  display: block;
+  background: none;
+  width: 90%;
+  height: 70px;
+  margin: auto;
+  border: 2px solid snow;
+  border-radius: 10px;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 16px;
+}
+.keysNumbers{
+  transition: .3s
+}
+.keysNumbers:active{
+  background: #FFFFFF45;
+}
